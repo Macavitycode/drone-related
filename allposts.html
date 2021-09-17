@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /all/
+---
+
+<div style="font-size: xx-large">
+  <strong>List of all posts</strong>
+</div>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
